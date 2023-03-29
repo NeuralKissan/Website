@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <section id="MainPage">
+       <h1>Neural<br> Kissan</h1>
+       <div id="menu">
+        <h4 id="menuHomeButton">Home</h4>
+        <h4 id="menuAboutButton">About</h4>
+        <h4 id="menuSignupButton">Book A Demo</h4>
+        <h4 id="menuLoginButton">Founders</h4>
+       </div> 
+
+    </section>
+    <div id="Back" onclick="goToMainPage(0)">
+        <style>
+            #Back{
+                opacity: 0;
+                padding-inline: 1.2em;
+                border-radius: 10px;
+                font-size: 1.8em;
+                font-weight: 200;
+                position: fixed;
+                bottom: 10px;
+                left: 10px;
+                z-index: 0;
+                border: 1px solid rgba(255, 255, 255, 0.116);
+                /* background: rgb(34, 34, 34); */
+                transition: .2s;
+            }
+            #Back:hover{
+                background: hsl(0, 0%, 8%);
+
+
+            }
+        </style>
+        Back
+    </div>
+    <section id="HomePage">
+        <p>
+            <span class="Highlight">Neural Kissan</span> is a startup that revolutionizes plant growth using advanced neural networks. Our AI technology optimizes every aspect of plant growth, resulting in <span class="Highlight">faster, healthier, and more abundant yields</span> while reducing <span class="Highlight">costs</span> and <span class="Highlight">environmental impact.</span> We offer scalable and adaptable solutions for small-scale indoor farming to large-scale commercial agriculture. Join us in creating a more sustainable future with Neural Kissan.
+
+
+        </p>
+        <!-- <p>We use AI to fine-tune our plant growth processes, achieving maximum efficiency and minimum time. Our approach reduces resource consumption, costs, and environmental impact. We believe that our technology can help address the challenge of limited access to fresh, locally grown produce and contribute to a more sustainable future.
+        </p><p>
+Our scalable and adaptable system can be used for small-scale indoor farming to large-scale commercial agriculture. We are proud to offer the Neural Kissan Pod, our product for the masses. The Pod is a state-of-the-art system designed for anyone interested in growing fresh produce at home. With our technology, anyone can become a successful gardener and enjoy the benefits of fresh, healthy produce right from their home.
+</p>    <p>
+The Pod is easy to use, requires minimal maintenance, and is perfect for individuals or families looking to cultivate their own produce in a sustainable and eco-friendly way. Our system ensures that you have access to fresh and nutritious produce year-round, regardless of the weather or the season.
+</p><p>
+At Neural Kissan, we are committed to using our technology to make a positive impact on the world. Our mission is to empower people to grow their own fresh produce in a sustainable and efficient way. Join us in creating a brighter and more sustainable future with the Neural Kissan Pod.
+        </p> -->
+    </section>
+</body>
+<script src="./script.js"></script>
+<script>
+    const Home=document.getElementById('menuHomeButton');
+    const About=document.getElementById('menuAboutButton');
+    const Signup=document.getElementById('menuSignupButton');
+    const Login=document.getElementById('menuLoginButton');
+    let interval=0
+    Home.onclick=(e)=>{
+        clearInterval(interval)
+        document.getElementById('MainPage').style.transform='translateY(-100px)'
+
+        document.getElementById('MainPage').style.opacity=0
+        // document.getElementById('MainPage').style.display='none'
+
+        document.getElementById('Back').style.opacity=1
+        interval=setInterval(()=>{
+
+        document.getElementById('MainPage').style.display='none'
+
+        },500)
+        
+    }
+
+    function goToMainPage(){
+        clearInterval(interval)
+        document.getElementById('Back').style.opacity=0
+
+        document.getElementById('MainPage').style.display='grid'
+        interval=setInterval(()=>{
+        document.getElementById('MainPage').style.transform='translateY(0px)'
+
+            document.getElementById('MainPage').style.opacity=1
+
+        },200)
+        
+    }
+
+</script>
+</html>

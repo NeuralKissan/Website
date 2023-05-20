@@ -52,9 +52,10 @@
     let Speed=20
     let Offset=100
     let ImageSet='Resized_'
+    let ImageExt='.webp'
     let ScrollFrame=("000" + Math.round((((window.scrollY+Offset)/Speed+1) % 119))).slice(-4)
     let Frame=ScrollFrame
-    PodImage.src=`Meida/Images/Seq/${ImageSet}${ScrollFrame}.png`
+    PodImage.src=`Meida/Images/Seq/${ImageSet}${ScrollFrame}${ImageExt}`
     window.onscroll=e=>{
       
         ScrollFrame=("000" + Math.round((((window.scrollY+Offset)/Speed+1) % 119))).slice(-4)
@@ -62,18 +63,18 @@
         if(Frame<ScrollFrame){
         for(let x =Frame;x<ScrollFrame;x++){
             Frame=("000" + x).slice(-4)
-            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}.png`
+            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}${ImageExt}`
             console.log(x)
         }
     }
         else if(Frame>ScrollFrame){
             for(let x =Frame;x>ScrollFrame;x--){
             Frame=("000" + x).slice(-4)
-            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}.png`
+            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}${ImageExt}`
             console.log(x)
         }
     }else if(window.scrollY==0){
-        PodImage.src=`Meida/Images/Seq/${ImageSet}0001.png`    }
+        PodImage.src=`Meida/Images/Seq/${ImageSet}0001${ImageExt}`    }
     }
   </script>
   

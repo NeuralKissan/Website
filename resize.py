@@ -1,4 +1,4 @@
-import PIL
+from PIL import Image as PilImage
 import cv2
 import os
 
@@ -11,5 +11,6 @@ Images=os.listdir()
 
 for Image in Images:
     print(Image)
-    I=cv2.resize(cv2.imread(Image,cv2.IMREAD_UNCHANGED),(1200,1080))
+    I=cv2.resize(cv2.imread(Image,cv2.IMREAD_UNCHANGED),(600*(2),520*(2)))
     cv2.imwrite(f'Resized_{Image}',I)
+   

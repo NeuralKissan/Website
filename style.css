@@ -95,6 +95,10 @@ Nav #NavInternal button:hover {
 }
 
 #Intro {
+  position: relative;
+  width: 100vw;
+  top: -90vw;
+  z-index: -1;
   height: 200vh;
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 95%);
 }/*# sourceMappingURL=style.css.map */

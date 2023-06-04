@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -20,13 +21,13 @@
               <div>
                 <ul>
                   <li><a href="">Home</a></li>
-                  <li><a href="">Pages</a></li>
-                  <li><a href="">Shop</a></li>
+       
+         
                   <li><a href="">Blog</a></li>
                   <li><a href="">Contact</a></li>
                 </ul>
               </div>
-        
+              
               <ul>
                 <li class="material-symbols-outlined"> person </li>
                 <!-- <li class="material-symbols-outlined"> folder </li> -->
@@ -42,40 +43,20 @@
         <p>Grow Anything Anywhere Anytime</p></div>
         
 
-        <img src="Meida/Images/9.1.png" alt="" />
-        <img src="Meida/Images/Seq/0001.png" id="PodImage" alt="" />
-    </section>
-    <section id="Intro"></section>
+        <img src="Meida/Images/9.1.2.png" alt="" />
+        <!-- <img src="Meida/Images/Seq/0001.png" id="PodImage" alt="" /> -->
+        <!-- <video width="600" height="100%"  id="PodImage">
+          <source 
+            src="Meida/Images/Op.mov" 
+            type='video/mp4; codecs="hvc1"'>
+          <source 
+            src="Meida/Images/Op20001-0120.webm" 
+            type="video/webm">
+        </video> -->
+      <video src="./Meida/Images/Op20001-0120.webm" id="PodImage" autoplay></video>
+        </section>
+    <section id="Main"></section>
   </body>
-  <script>
-    const PodImage = document.getElementById('PodImage')
-    let Speed=20
-    let Offset=100
-    let ImageSet='Resized_'
-    let ImageExt='.webp'
-    let ScrollFrame=("000" + Math.round((((window.scrollY+Offset)/Speed+1) % 119))).slice(-4)
-    let Frame=ScrollFrame
-    PodImage.src=`Meida/Images/Seq/${ImageSet}${ScrollFrame}${ImageExt}`
-    window.onscroll=e=>{
-      
-        ScrollFrame=("000" + Math.round((((window.scrollY+Offset)/Speed+1) % 119))).slice(-4)
-        console.log(Frame,ScrollFrame)
-        if(Frame<ScrollFrame){
-        for(let x =Frame;x<ScrollFrame;x++){
-            Frame=("000" + x).slice(-4)
-            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}${ImageExt}`
-            console.log(x)
-        }
-    }
-        else if(Frame>ScrollFrame){
-            for(let x =Frame;x>ScrollFrame;x--){
-            Frame=("000" + x).slice(-4)
-            PodImage.src=`Meida/Images/Seq/${ImageSet}${Frame}${ImageExt}`
-            console.log(x)
-        }
-    }else if(window.scrollY==0){
-        PodImage.src=`Meida/Images/Seq/${ImageSet}0001${ImageExt}`    }
-    }
-  </script>
-  
+  <script src="script.js"></script>
+  <script src="GsapAni.js"></script>
 </html>

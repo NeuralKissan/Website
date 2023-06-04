@@ -125,9 +125,9 @@ Nav {
   }
   #PodImage{
     position: absolute;
-    bottom: 0;
+    bottom: -300px;
     // min-width: 55vw;
-    max-width: 500px;
+    max-width: 1000px;
     left: 50%;
     transform: translate(-50% ,0%);
     z-index: 2000;

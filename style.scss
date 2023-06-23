@@ -1,10 +1,14 @@
+
+
 * {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
 }
 :root {
-  --accent: rgb(44, 253, 159);
+  --Black:#050505
+  --accent: #2cfd9f;
+  --accent: #00da88;
   --accent01: rgb(255, 255, 255);
 }
 ::-webkit-scrollbar {
@@ -100,16 +104,16 @@ Nav {
   .Center {
     grid-column-start: 2;
     grid-column-end: 4;
-    
     margin-top: 10vw;
     display: flex;
     flex-direction: column;
     text-align: center;
     z-index: 1;
     justify-content: center;
+    align-items: center;
     h1 {
- 
-      color: var(--accent);
+
+        color: var(--accent);
       font-size: 5em;
     }
     p {

@@ -96,7 +96,7 @@ form{
 font-size: 2em;
 font-weight: 100;
 }
-form input{
+form input,form button{
   border: none;
   height: 38px;
   width: 51vw;
@@ -106,11 +106,12 @@ form input{
   border-radius: 3px;
   /* background: #00da88; */
 }
-form input[type='Button']{
+form button{
+  
   background: var(--accent);
   font-weight: 700;
   transition: background-color .2s;
 }
-form input[type='Button']:hover{
+form button:hover{
   background: var(--accentHover);
 }

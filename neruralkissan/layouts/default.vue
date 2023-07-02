@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-[#050505] h-[100vh]">
+    <div>
         <Nav />
         <slot/>
-        <!-- <img src="~/assets/img/backdrop.png" alt=""> -->
 
     </div>
+    <div class="h-[100vh] w-[100vw] bg-[#050505] fixed top-0 z-[-2]"></div>
 </template>
 
 <script setup>
@@ -12,9 +12,6 @@
 </script>
 
 <style scoped>
-img{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
+
+
 </style>

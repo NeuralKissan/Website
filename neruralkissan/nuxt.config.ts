@@ -1,5 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'],
+  devtools: { enabled: false },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@hypernym/nuxt-anime',
+  ],
+  anime: {
+    provide: true,
+    composables: true
+
+  },
+  
 })

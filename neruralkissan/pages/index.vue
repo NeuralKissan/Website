@@ -1,10 +1,10 @@
 <template>
-<div>
-</div>
+  <indexHero />
+  <indexPart1 />
 </template>
 
 <script setup>
-  
+
 </script>
 
 <style scoped>

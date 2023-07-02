@@ -3,7 +3,7 @@
         <!-- <TopNotification message="Hello im a notif" /> -->
         <h1 class="text-5xl font-bold mt-10 montserrat w-[80%] opacity-0" id="MainTagline">Grow Anything Anytime Anywhere </h1>
         <p class="font-thin mt-5 w-[60%] opacity-0 text-lg poppins" id="tagline">Creating Technology for a sustainable future one plant at a time</p>
-        <img src="~/assets/img/Pod.png" class="mt-[-12rem] h-[50rem]  opacity-0 object-cover" alt="" id="PodImage">
+        <img src="/PodBlack.png" class="mt-[-12rem] h-[50rem]  opacity-0 object-cover" alt="" id="PodImage">
     </div>
     <img src="~/assets/img/backdrop.png" id="Backdrop" alt="">
     </template>

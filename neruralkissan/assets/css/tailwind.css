@@ -9,7 +9,14 @@
 :root{
   --accent:#00da88;
 }
+::-webkit-scrollbar{
+  width: 1px;
+background: #050505;
+}
 
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to top,#000000,#00da88,#000000);
+}
 body{
     color: white;
     font-family: 'Noto Sans', sans-serif;

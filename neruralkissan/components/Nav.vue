@@ -4,7 +4,7 @@
         <ul class="text-white flex gap-6  items-center">
             <li><NuxtLink to="/About" class="p-3 ">About</NuxtLink></li>
             <li><NuxtLink to="/Blog" class="p-3">Blog</NuxtLink></li>
-            <li ><NuxtLink to="" class="btn rounded"><Icon name="ph:envelope-simple"/> Register For The Launch</NuxtLink></li>
+            <li class="btn" ><NuxtLink to="" ><Icon name="ph:envelope-simple"/> Register For The Launch</NuxtLink></li>
         </ul>
     </div>
 </template>
@@ -17,14 +17,15 @@
 
 <style scoped>
 .btn{
+    font-size: .8em;
     background: rgb(215, 215, 215);
     color: #000000;
-    padding: 8px;
+    padding: 7px;
     display: flex;
     align-items: center;
     gap:10px;
     cursor: pointer;
-    transition: .1s;
+    transition: .3s;
 }
 .btn:hover{
     background: rgba(255, 255, 255, 0.053);

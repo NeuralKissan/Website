@@ -1,5 +1,5 @@
 <template>
-    <div class="flex lg:p-12 items-center justify-between lg:px-32 sm:px-10 sm:p-10 mt-[-10px] opacity-0" id="NAV">
+    <div class="flex lg:p-12 items-center justify-between lg:px-32 sm:px-10 sm:p-10 mt-[-10px] opacity-1" id="NAV">
         <nuxt-link to="/"><h1 class="text-2xl font-[200] text-white flex p-3 montserrat">Neural<span class="text-[#00da88]">Kissan</span></h1></nuxt-link>
         <ul class="text-white flex gap-6  items-center">
             <li><NuxtLink to="/About" class="p-3 ">About</NuxtLink></li>
@@ -10,9 +10,9 @@
 </template>
 
 <script setup>
-onMounted(() => {
-    useAnime({ targets: '#NAV', translateY: 10, opacity:1,duration: 1200,delay:1000 ,easing:'easeInOutCubic'})
-  })
+// onMounted(() => {
+//     useAnime({ targets: '#NAV', translateY: 10, opacity:1,duration: 1200,delay:1000 ,easing:'easeInOutCubic'})
+//   })
 </script>
 
 <style scoped>

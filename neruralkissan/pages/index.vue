@@ -1,6 +1,7 @@
 <template>
   <indexHero />
-  <indexPart1 />
+  <indexMain />
+
 </template>
 
 <script setup>

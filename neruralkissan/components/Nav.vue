@@ -1,18 +1,17 @@
 <template>
-    <div class="flex lg:p-12 items-center justify-between lg:px-32 sm:px-10 sm:p-10 mt-[-10px] opacity-1" id="NAV">
-        <nuxt-link to="/"><h1 class="text-2xl font-[200] text-white flex p-3 montserrat">Neural<span class="text-[#00da88]">Kissan</span></h1></nuxt-link>
+    <div class="flex lg:p-12  items-center justify-between lg:px-32 px-6 p-10 mt-[-10px] opacity-1" id="NAV">
+        <nuxt-link to="/" ><h1 class="sm:text-2xl font-[200] text-white flex p-3 montserrat ">Neural<span class="text-[#00da88]">Kissan</span></h1></nuxt-link>
         <ul class="text-white flex gap-6  items-center">
             <li><NuxtLink to="/About" class="p-3 ">About</NuxtLink></li>
             <li><NuxtLink to="/Blog" class="p-3">Blog</NuxtLink></li>
-            <li class="btn" ><NuxtLink to="" ><Icon name="ph:envelope-simple"/> Register For The Launch</NuxtLink></li>
+            <li class="btn" ><NuxtLink to="" ><Icon name="ph:envelope-simple"/><span class="sm:hidden"> Register</span><span class="sm:inline hidden"> Register For The Launch</span></NuxtLink></li>
         </ul>
     </div>
 </template>
 
 <script setup>
-// onMounted(() => {
-//     useAnime({ targets: '#NAV', translateY: 10, opacity:1,duration: 1200,delay:1000 ,easing:'easeInOutCubic'})
-//   })
+
+
 </script>
 
 <style scoped>
@@ -29,8 +28,15 @@
 }
 .btn:hover{
     background: rgba(255, 255, 255, 0.053);
-    color: white;
+    color:var(--accent);
     mix-blend-mode: d;
+}
+li a{
+    transition: .2s;
+}
+li a:hover{
+    color:var(--accent);
+
 }
 li .router-link-active,li .router-link-exact-active{
 color:var(--accent);

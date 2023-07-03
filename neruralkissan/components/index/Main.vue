@@ -1,7 +1,7 @@
 <template>
     <div class="mt-[10rem] ">
         <!-- <Card src="~/assets/img/Pod" text="Neural Kissan is a company that is automating farming to a whole new level. They are using vertical farming techniques to grow crops in a controlled environment. This allows them to produce more food in a smaller space, and to do so more efficiently."  /> -->
-        <div class="flex items-center p-7 flex-col gap-[12rem]">
+        <div class="flex items-center p-7 flex-col lg:gap-[12rem] gap-10">
             <Card 
             direction="lr" 
             title="Neural Kissan Is A Company Automating Farming To A whole Different Level Literally" 

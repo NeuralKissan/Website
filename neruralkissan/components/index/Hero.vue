@@ -1,11 +1,11 @@
 <template>
     <div class="h-[90vh]  text-center flex flex-col items-center ">
         <!-- <TopNotification message="Hello im a notif" /> -->
-        <h1 class="text-5xl font-bold mt-10 montserrat w-[80%] opacity-0" id="MainTagline">Grow Anything Anytime Anywhere </h1>
-        <p class="font-thin mt-5 w-[60%] opacity-0 text-lg poppins" id="tagline">Creating Technology for a sustainable future one plant at a time</p>
-        <img src="/PodBlack.png" class="mt-[-12rem] h-[50rem]  opacity-0 object-cover" alt="" id="PodImage">
+        <h1 class="text-5xl font-bold sm:mt-10 mt-2  montserrat w-[80%] opacity-0" id="MainTagline">Grow Anything Anytime Anywhere </h1>
+        <p class="font-thin sm:mt-5 mt-1 w-[60%] opacity-0 text-lg poppins" id="tagline">Creating Technology for a sustainable future one plant at a time</p>
+        <img src="/PodBlack.png" class="mt-[-12rem] lg:mt-[-20rem] h-[50rem] lg:h-[60rem]  opacity-0 object-cover pointer-events-none	" alt="" id="PodImage">
     </div>
-    <img src="~/assets/img/backdrop.png" id="Backdrop" alt="">
+    <img src="/img/backdrop.png" class="absolute top-0 w-screen min-h-screen object-cover z-[-1]" alt="">
     </template>
     
     <script setup>
@@ -25,7 +25,7 @@
         top: 0;
         z-index: -1;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         object-fit: cover;
     }
     </style>

@@ -12,10 +12,10 @@
     </div>
     <div>
         <ul class="flex gap-4 font-thin">
-            <li><nuxt-link to=""><Icon size='18' name="carbon:logo-twitter" /></nuxt-link></li>
-            <li><nuxt-link to=""><Icon size='18' name="carbon:logo-youtube" /></nuxt-link></li>
-            <li><nuxt-link to=""><Icon size='18' name="carbon:logo-github" /></nuxt-link></li>
-            <li><nuxt-link to=""><Icon size='18' name="carbon:logo-linkedin" /></nuxt-link></li>
+            <!-- <li><nuxt-link to=""><Icon size='18' name="carbon:logo-twitter" /></nuxt-link></li>
+            <li><nuxt-link to=""><Icon size='18' name="carbon:logo-youtube" /></nuxt-link></li> -->
+            <li><nuxt-link to="https://github.com/NeuralKissan"><Icon size='18' name="carbon:logo-github" /></nuxt-link></li>
+            <li><nuxt-link to="https://www.linkedin.com/company/neural-kissan"><Icon size='18' name="carbon:logo-linkedin" /></nuxt-link></li>
         </ul>
     </div>
 </div>

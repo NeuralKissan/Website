@@ -1,9 +1,9 @@
 <template>
-    <div class="flex lg:p-12  items-center justify-between lg:px-32 px-6 p-10 mt-[-10px] opacity-1" id="NAV">
-        <nuxt-link to="/" ><h1 class="sm:text-2xl font-[200] text-white flex p-3 montserrat ">Neural<span class="text-[#00da88]">Kissan</span></h1></nuxt-link>
-        <ul class="text-white flex gap-6  items-center">
-            <li><NuxtLink to="/About" class="p-3 ">About</NuxtLink></li>
-            <li><NuxtLink to="/Blog" class="p-3">Blog</NuxtLink></li>
+    <div class="flex lg:p-12  items-center justify-between lg:px-32 px-3 py-10 mt-[-10px] opacity-1" id="NAV">
+        <nuxt-link to="/" ><h1 class="sm:text-2xl font-[200] text-white flex sm:p-3 montserrat ">Neural<span class="text-[#00da88]">Kissan</span></h1></nuxt-link>
+        <ul class="text-white flex sm:gap-6 gap-3 items-center ">
+            <li><NuxtLink to="/About" class="sm:p-3 ">About</NuxtLink></li>
+            <li><NuxtLink to="/Blog" class="sm:p-3">Blog</NuxtLink></li>
             <li class="btn" ><NuxtLink to="" ><Icon name="ph:envelope-simple"/><span class="sm:hidden"> Register</span><span class="sm:inline hidden"> Register For The Launch</span></NuxtLink></li>
         </ul>
     </div>

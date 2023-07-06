@@ -6,7 +6,7 @@
             direction="lr" 
             title="Neural Kissan Is A Company Automating Farming To A whole Different Level Literally" 
             text="Neural Kissan is a company that is automating farming to a whole new level. They are using vertical farming techniques to grow crops in a controlled environment. This allows them to produce more food in a smaller space, and to do so more efficiently." 
-            src="/plantImg3.jpg" 
+            src="/img/plantImg3.jpg" 
             />
             <Card  
             title="Revolutionizing Agriculture: Neural Kissan's Quest for Efficient and Sustainable Farming" 
@@ -16,7 +16,7 @@
             With an unwavering commitment to innovation,
             this visionary company is revolutionizing the agricultural industry,
             taking farming to an unprecedented level of efficiency and sustainability. " 
-            src="/plantImg2.jpg"
+            src="/img/plantImg2.jpg"
             />
 
         </div>

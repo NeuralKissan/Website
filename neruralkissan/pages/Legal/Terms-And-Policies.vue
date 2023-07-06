@@ -1,7 +1,6 @@
 <template>
     <div>
-        <AboutHero />
-        <AboutTeam/>
+        Terms-And-Policies
     </div>
 </template>
 
@@ -9,6 +8,6 @@
 
 </script>
 
-<style scoped>
+<style  scoped>
 
 </style>

@@ -1,9 +1,9 @@
 <template>
-    <div class="h-[90vh]  text-center flex flex-col items-center ">
+    <div class="h-[90vh] text-center flex flex-col items-center ">
         <!-- <TopNotification message="Hello im a notif" /> -->
         <h1 class="text-5xl font-bold sm:mt-10 mt-2  montserrat w-[80%] opacity-0" id="MainTagline">Grow Anything Anytime Anywhere </h1>
         <p class="font-thin sm:mt-5 mt-1 w-[60%] opacity-0 text-lg poppins z-[2]" id="tagline">Creating Technology for a sustainable future one plant at a time</p>
-        <img src="/PodBlack.png" class="mt-[-10rem] z-[0] lg:mt-[-20rem] h-[50rem] lg:h-[60rem]  opacity-0 object-cover pointer-events-none	" alt="" id="PodImage">
+        <img src="/img/PodBlack.png" class="mt-[-10rem] z-[0] lg:mt-[-20rem] h-[50rem] lg:h-[60rem]  opacity-0 object-cover pointer-events-none	" alt="" id="PodImage">
     </div>
     <img src="/img/backdrop.png" class="absolute top-0 w-screen min-h-screen object-cover z-[-1]" alt="">
     </template>

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <AboutHero />
-        <AboutTeam/>
+        Brand-Guidelines
     </div>
 </template>
 
@@ -9,6 +8,6 @@
 
 </script>
 
-<style scoped>
+<style  scoped>
 
 </style>

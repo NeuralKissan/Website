@@ -8,6 +8,7 @@
 
 :root{
   --accent:#00da88;
+
 }
 ::-webkit-scrollbar{
   width: 1px;
@@ -22,6 +23,9 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
+.bg-accent{
+  background-color:var(--accent);
+}
 .montserrat{
         font-family: 'Montserrat', sans-serif;
 
@@ -34,4 +38,21 @@ body{
 
 .serif{
   font-family: 'DM Serif Display', serif;
+}
+
+.btn{
+  font-size: .8em;
+  background: rgb(215, 215, 215);
+  color: #000000;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn:hover{
+  background: rgba(255, 255, 255, 0.053);
+  color:var(--accent);
+  mix-blend-mode: d;
 }

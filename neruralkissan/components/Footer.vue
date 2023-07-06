@@ -5,9 +5,9 @@
     <div>
         <h1 class="montserrat">Neural Kissan © 2022 - 2023</h1>
         <ul class="text-sm font-light">
-            <li><nuxt-link to="">Terms & policies</nuxt-link></li>
-            <li><nuxt-link to="">Privacy policy</nuxt-link></li>
-            <li><nuxt-link to="">Brand guidelines</nuxt-link></li>
+            <li><nuxt-link to="/Legal/Terms-And-Policies">Terms & policies</nuxt-link></li>
+            <li><nuxt-link to="/Legal/Privacy-Policy">Privacy policy</nuxt-link></li>
+            <li><nuxt-link to="/Legal/Brand-Guidelines">Brand guidelines</nuxt-link></li>
         </ul>
     </div>
     <div>

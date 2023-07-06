@@ -4,7 +4,7 @@
         <ul class="text-white flex sm:gap-6 gap-3 items-center ">
             <li><NuxtLink to="/About" class="sm:p-3 ">About</NuxtLink></li>
             <li><NuxtLink to="/Blog" class="sm:p-3">Blog</NuxtLink></li>
-            <li class="btn" ><NuxtLink to="" ><Icon name="ph:envelope-simple"/><span class="sm:hidden"> Register</span><span class="sm:inline hidden"> Register For The Launch</span></NuxtLink></li>
+            <li  ><RegisterButton /></li>
         </ul>
     </div>
 </template>
@@ -15,22 +15,7 @@
 </script>
 
 <style scoped>
-.btn{
-    font-size: .8em;
-    background: rgb(215, 215, 215);
-    color: #000000;
-    padding: 7px;
-    display: flex;
-    align-items: center;
-    gap:10px;
-    cursor: pointer;
-    transition: .3s;
-}
-.btn:hover{
-    background: rgba(255, 255, 255, 0.053);
-    color:var(--accent);
-    mix-blend-mode: d;
-}
+
 li a{
     transition: .2s;
 }
